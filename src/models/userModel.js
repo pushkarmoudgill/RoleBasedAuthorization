@@ -16,6 +16,17 @@ const userSchema =new mongoose.Schema({
         required:true,
         enum:["admin","manager","user"],
     },
+    salary:{
+        type: Number,
+        required:true,
+        
+    },
+    department:{
+        type: String,
+        required:true,
+        
+    },
+
 },{
     timestamps:true,
 })
